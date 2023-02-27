@@ -110,9 +110,9 @@ h3{
   flex-wrap:wrap;
 }
 
-.calender{
-  max-width: 50%;
-  min-width: 40%;
+.calender, .latest-news{
+  max-width: 40%;
+  min-width: 10%;
   height: auto;
 }
 
