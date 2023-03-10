@@ -1,34 +1,75 @@
-*{
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-  font-family: montserrat, sans-serif;
-  }
+:root{
+  --clr-bg-100:  #4c87cba1;
+  --clr-bg-200:  #1F2937;
+  --clr-bg-300: #fff;
+  --ff-primary: montserrat, sans-serif;
+  --ff-color-primary: #fff;
+  --ff-color-secondary: #2a2a2a; 
+}
 
-#header{
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--ff-primary);
+  font-weight: 300;
+  font-size: 1.3125rem;
+  margin:0;
+}
+
+h1{
+  font-size: 48px;
+  margin: 0;
+}
+
+h2{
+  font-size: 26px;
+}
+
+h4{
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+a{
+  color:white;
+}
+
+header{
   top: 0;
   width:100%;
   position:fixed;
-  display:flex;
-  align-items: center;
+  background-color: var(--clr-bg-300);
+}
+
+
+.header-container{
+  margin-inline: auto;
+  width:  min(90%, 100rem);
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  flex-wrap:wrap;
-  background-color: white;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 
 .header-link{
-  color:black;
-  margin: 15px;
+  color:var(--ff-color-secondary);
   text-decoration: none;
+  margin: 15px;
 }
+
 
 .header-link:hover{
   color: #3b7eca;
 }
 
 .trinity-logo{
-  width:65%;
+  width:80%;
 }
 
 .trinity-logo:hover{
@@ -36,60 +77,46 @@
   transition-duration: 0.5s;
 }
 
+section{
+  margin-top: 5rem;
+  text-align: center;
+  background-image: url("images/Website+steeple+a.jpg");
+  background-size: cover;
+  background-position: 50% 25%;
+}
 
-#welcome{
-  margin-top: 40px;
+.section-container{
+  margin-inline: auto;
+  width:  min(90%, 80.5rem);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-image: url("images/Website+steeple+a.jpg");
-  padding: 100px;
-  background-size: cover;
-  background-position: 50% 25%;
-  flex-wrap:wrap;
-  gap: 1rem;
-}
-
-.slideshow{
-  width: 27rem;
-  height: 27rem;
-  border-radius: 3%;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 80px 0px;
 }
 
 .trinity-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  color:white;
-  background-color: #6299d7a1;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 3%;
-}
-
-h1, h2, h3, h4, button{
-  margin: 16px;
-  text-align: center;
-}
-
-h1{
-  font-size: 48px;
-}
-
-h3{
-  margin-top: -70px;
-}
-
-.bulletin-link, .youtube-link, .facebook-link{
-  color:white;
+  align-items: center;
+  background-color: var(--clr-bg-100);
+  color: var(--ff-color-primary);
+  padding: 3rem;
 }
 
 .bulletin-link:hover, .youtube-link:hover, .facebook-link:hover{
   color: #cae3ff;
 }
 
+.slideshow{
+  width:  min(90%, 28rem);
+  height: 28rem;
+  border-radius: 3%;
+}
+
 .button{
-  margin-top: 10px;
   padding: 17px;
   background-color: #0b7dd1;
   border:  #0b7dd1;
@@ -102,21 +129,7 @@ h3{
    background-color: #378ed9; 
 }
 
-
-.latest-content-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap:wrap;
-}
-
-.calender, .latest-news{
-  max-width: 40%;
-  min-width: 10%;
-  height: auto;
-}
-
-#footer{
+footer{
   padding: 30px; 
   font-size: 14px; 
   letter-spacing: 2px;
@@ -124,9 +137,6 @@ h3{
   align-items:center;
   justify-content:space-around;
   flex-direction:row;
-  background:#1F2937;
-  color:white;
+  background: var(--clr-bg-200);
+  color: var(--ff-color-primary);
 }
-
-
-
