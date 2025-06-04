@@ -93,14 +93,14 @@ header{
 .welcome-container{
   text-align: center;
   margin-inline: auto;
-  width:  min(90%, 80.5rem);
+  width:  min(95%, 80.5rem);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3rem;
-  padding: 80px 0px;
+  gap: 1.7rem;
+  padding: 100px 0px;
 }
 
 .trinity-container{
@@ -118,7 +118,7 @@ header{
 
 .slideshow{
   width:  min(90%, 28rem);
-  height: 28rem;
+  height: 27.5rem;
   border-radius: 3%;
 }
 
@@ -136,7 +136,7 @@ header{
 }
 
 footer{
-  padding: 30px; 
+  padding: 50px; 
   font-size: 14px; 
   letter-spacing: 2px;
   display:flex;
